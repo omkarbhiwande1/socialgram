@@ -1,0 +1,208 @@
+.navbar{
+    background-color: rgb(41, 41, 180);
+}
+
+.add-button-sm{
+    display: none;
+}
+.home-container{
+    display: flex;
+}
+.posts{
+    width: 50%;
+    margin-left: auto;
+
+}
+.card-parent{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+
+
+
+}
+
+.userdetails{
+    width: 30%;
+    margin-right: auto;
+    margin-left: 10px;
+}
+.hden{
+    display: none
+}
+.post-delete-icon{
+    position: absolute;
+    left: 95%;
+    top: 5%;
+    cursor: pointer;
+    color: rgb(224, 33, 33);
+}
+.post-delete-button{
+    color: rgb(240, 41, 41);
+}
+.test{
+    opacity: 1;
+}
+/*MODAL*/
+
+.modal-parent {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  .modal-body {
+
+    position: relative;
+    background-color: #fefefe;
+    top: 20%;
+    margin: auto;
+    padding: 0;
+    /* border: 1px solid green; */
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    /* border: 1px solid blue; */
+  }
+  .comment-modal-body{
+      top: 5%;
+  }
+  .delete-modal-body{
+      top: 50%;
+  }
+  /* Add Animation */
+  @keyframes animatetop {
+    from { opacity: 0}
+    to { opacity: 1}
+  }
+/*MODAL*/
+@media only screen and (max-width: 600px) {
+
+    .add-button-lg{
+        display: none;
+
+    }
+    .add-button-sm{
+        display: inline;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .home-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .posts{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        order: 2;
+        margin: 0;
+    }
+    .post-delete-icon{
+        left: 93%;
+    }
+    .card-parent{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-image{
+        margin: auto;
+        width: 100%;
+
+    }
+    .card-content{
+        width: fit-content;
+        margin: auto;
+    }
+    .userdetails{
+        width: 100%;
+        order: 1;
+        margin: 0;
+    }
+    .hden{
+        display: block
+    }
+    .follower-data{
+        margin-top: 20px;
+        order: 2;
+    }
+    .search-user{
+        order: 1;
+    }
+    .modal-body {
+
+        width: 100%;
+
+    }
+    .comment-modal-body{
+        top: 0;
+    }
+}
+
+/* const styles = (theme) => ({
+    addIcon:{
+        border: '1px solid',
+        borderColor: 'white',
+        borderRadius: 200,
+        padding: 5,
+        cursor: 'pointer',
+        '&:hover': {
+        backgroundColor: blue[700],
+
+        }
+    },
+    addIconParent: {
+        //   border: '1px solid black',
+        display: 'block',
+        margin: '0 auto 0 100px',
+    },
+    title:{
+        marginBottom: 10
+    },
+    textField: {
+        marginBottom: 10
+    },
+    fileInput: {
+        visibility: 'hidden',
+        width: 0
+    },
+    addImageParent: {
+        position: 'relative'
+    },
+    addImage:{
+        marginBottom: 10,
+        height: 30,
+        backgroundColor: blue[400]
+    },
+    fileLabel: {
+        height: 25,
+        marginLeft: 0,
+        position: 'absolute',
+        top: 0
+    },
+    submitButton: {
+        display: 'block',
+        marginLeft: 'auto'
+    },
+    circularProgressParent:{
+        height: '100px',
+        display: 'flex'
+    },
+    circularProgress: {
+        display: 'block',
+        margin: 'auto'
+        
+        // border: '1px solid blue'
+    
+        // border: '1px solid black'
+    }
+}); */

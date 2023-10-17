@@ -1,0 +1,29 @@
+{
+  "name": "socialgram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "14.13.0",
+    "npm": "6.14.8"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "author": "Omkar",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "firebase-admin": "^9.2.0",
+    "formidable": "^1.2.2",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.6",
+    "pg": "^8.5.1",
+    "socket.io": "^3.1.0"
+  }
+}
